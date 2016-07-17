@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Alphanumeric Permuter</title>
     <meta charset="utf-8"/>
+    <title>Alphanumeric Permuter</title>
     <script src="permuter.js"></script>
 </head>
 <body>
-<p><input type="text" id="word" onkeyup="calcPermutations(this.value.length)" placeholder="Type something here..."/></p>
-
+<h1>Alphanumeric Permuter</h1>
+<input type="text" id="word" onkeyup="Permutation.execute(this.value)" placeholder="Type something here..."/>
 <p><span id="possibilities">0</span> possible permutations.</p>
-
-<p><textarea id="result" style="height: 200px; width: 150px;" disabled="disabled"></textarea></p>
+<ul id="result"></ul>
+<footer>
+    <p><em>Apenas um outro <a href="https://github.com/felladrin/alphanumeric-permuter">experimento</a> de <a href="https://github.com/felladrin">Felladrin</a>.</em></p>
+</footer>
 </body>
 </html>
